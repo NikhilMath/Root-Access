@@ -67,11 +67,14 @@ const STORY = {
 
     trace: {
       title: "xXr00tXx",
+      revised: 1,
       text: [
         "It takes Dale eleven minutes and an energy drink he finds in the back of the fridge, expiration date 2016, to trace the login. It isn’t coming from Russia. It isn’t coming from China.",
-        "It’s coming from 14 Heron Point Drive, Lakeshore Estates, the part of town where the mailboxes are shaped like smaller, nicer houses.",
+        "It’s coming in through Brightline’s own VPN, on the executive login, the one only the bosses have the password for. Whoever xXr00tXx is, they’re not breaking in. They have a key.",
+        "And they’re using it from 14 Heron Point Drive, Lakeshore Estates, the part of town where the mailboxes are shaped like smaller, nicer houses.",
         "He pulls it up on Street View. A mansion. A three-car garage. A fountain in the front yard: a marble cherub pissing into a clamshell.",
-        "“Who the fuck at Brightline can afford a pissing cherub?” Dale asks his empty bedroom. Brightline Solutions, where he’s run IT for eleven years, hasn’t given out raises since 2019. Last Christmas, the bonus was a fleece vest.",
+        "Which makes no sense, because as far as anyone can tell, Brightline Solutions is broke. It hasn’t turned a profit since 2019. Nobody’s had a raise since 2019. The coffee machine takes quarters. Last Christmas, the bonus was a fleece vest.",
+        "“Who the fuck at Brightline can afford a pissing cherub?” Dale asks his empty bedroom.",
         "It’s 3:31 a.m. He is wide awake, and so, still, is everything else.",
       ],
       choices: [
