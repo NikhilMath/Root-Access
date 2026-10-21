@@ -74,14 +74,14 @@ body {
   left: 50%;
   width: min(64rem, calc(100vw - 2rem));
   transform: translateX(-50%);
-  margin-top: 3rem;
+  margin-bottom: 2rem;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
   background: var(--surface);
   font-family: var(--font-ui);
 }
 
-/* Closed, it lines up with the choices above it. */
+/* Closed, it lines up with the story below it. */
 .story-map:not([open]) {
   left: 0;
   width: 100%;
@@ -96,19 +96,14 @@ body {
   cursor: pointer;
 }
 
-/* Big maps scroll inside their box, which follows where you are. */
+/* Big maps scroll inside their box, which follows where you are. It sits
+   open above the story, so it stops short enough to leave the scene's
+   title on screen. */
 .map-scroll {
-  max-height: 55vh;
+  max-height: 45vh;
+  max-height: 45svh;
   overflow: auto;
   padding: 0 1rem;
-}
-
-/* On phones it's opened on purpose, so it gets most of the screen. */
-@media (max-width: 600px) {
-  .map-scroll {
-    max-height: 70vh;
-    max-height: 70svh;
-  }
 }
 
 #map-svg {

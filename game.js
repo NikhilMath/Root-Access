@@ -119,9 +119,9 @@
     document.title = passage.title ? `${passage.title} · Root Access` : "Root Access";
   }
 
-  // `jump` scrolls the page so the new scene's title is at the top. It's off
-  // for the first page load, so the page opens at the very top.
-  function render(jump) {
+  // Every scene opens at the very top of the page, so the map above the
+  // story is in view.
+  function render() {
     const id = currentId();
     const passage = STORY.passages[id];
 
@@ -145,8 +145,7 @@
     endingsFound.textContent = `Endings found: ${found} of ${endings.length}`;
     centerMapOn(mapSvg.querySelector(".map-node.current rect"));
 
-    if (jump) titleEl.scrollIntoView({ block: "start" });
-    else window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     titleEl.focus({ preventScroll: true });
   }
 
@@ -162,7 +161,7 @@
 
   function goToStart() {
     lastId = null;
-    if (currentId() === STORY.start) render(true);
+    if (currentId() === STORY.start) render();
     else location.hash = STORY.start;
   }
 
@@ -181,6 +180,6 @@
     if (mapBox.open) centerMapOn(mapSvg.querySelector(".map-node.current rect"));
   });
 
-  window.addEventListener("hashchange", () => render(true));
+  window.addEventListener("hashchange", () => render());
   render();
 })();

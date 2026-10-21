@@ -25,14 +25,7 @@
       <p class="site-title">Root Access</p>
     </header>
 
-    <article id="passage" aria-live="polite">
-      <h1 id="passage-title" tabindex="-1"></h1>
-      <div id="passage-text"></div>
-    </article>
-
-    <nav id="choices" aria-label="Choices"></nav>
-
-    <details class="story-map">
+    <details class="story-map" open>
       <summary>Story map</summary>
       <div class="map-scroll">
         <svg id="map-svg" aria-label="Story map"></svg>
@@ -46,6 +39,13 @@
         <span class="legend-item legend-found" id="endings-found">Endings found</span>
       </p>
     </details>
+
+    <article id="passage" aria-live="polite">
+      <h1 id="passage-title" tabindex="-1"></h1>
+      <div id="passage-text"></div>
+    </article>
+
+    <nav id="choices" aria-label="Choices"></nav>
 
     <footer class="site-footer">
       <button id="restart" type="button">Start over</button>
