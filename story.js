@@ -50,13 +50,13 @@ const STORY = {
 
     logs: {
       title: "The Server Logs",
-      revised: 1,
+      revised: 2,
       text: [
         "Dale props the laptop on his knees. It doesn’t sit flat. He adjusts. It still doesn’t sit flat. He decides that’s a problem for later and opens the logs.",
         "At 2:59:59, nothing. At 3:00:00, forty-one thousand connections hit the server at once, from Germany, Japan, Brazil and one Holiday Inn Express outside Omaha. The server takes it like a champ for about four seconds, then lies down and dies.",
         "That’s weird thing number one.",
         "Weird thing number two: somebody keeps logging in as an administrator with an account Dale never made. The username is <em>xXr00tXx</em>, which means it’s either a hacker or a fourteen-year-old.",
-        "Weird thing number three: the network jack in Conference Room B has been shoveling gigabytes out of the building most nights between one and four in the morning.",
+        "Weird thing number three: the network jack in Conference Room B has been shoveling hundreds of gigabytes out of the building most nights between one and four in the morning.",
         "Six weeks ago, Dale would have closed the laptop and stared at the ceiling until he died. Tonight, he cracks his knuckles.",
       ],
       choices: [
@@ -82,8 +82,9 @@ const STORY = {
 
     bandwidth: {
       title: "Port 14",
+      revised: 1,
       text: [
-        "Dale follows the traffic. Most nights, from 1:00 to 4:00 a.m., the jack in the wall of Conference Room B uploads six gigabytes of something to a streaming site. Night after night. Like a heartbeat. Like a tiny, sweaty heartbeat.",
+        "Dale follows the traffic. Most nights, from 1:00 to 4:00 a.m., the jack in the wall of Conference Room B uploads hundreds of gigabytes of something to a streaming site. Night after night. Like a heartbeat. Like a big, sweaty heartbeat.",
         "Only one badge besides Dale’s and the night guard’s works in that building after midnight. It belongs to Brent Koslowski, VP of Operations, Dale’s boss, a man who says “per my last email” out loud, at funerals.",
         "Brent. Of course it’s Brent. Brent, who once wrote Dale up for “tone” in an out-of-office reply. Brent, who microwaves fish.",
         "For six years, Dale didn’t have the energy to hate Brent properly. Now, thanks to modern pharmacology, he has energy to spare.",
@@ -811,11 +812,12 @@ const STORY = {
 
     crash_anyway: {
       title: "3:00 a.m.",
+      revised: 1,
       text: [
         "At 2:59, Dale is standing in the doorway of Conference Room B, smug as hell, watching the clock on his phone like a man at a New Year’s Eve party who’s about to get the best kiss of his life.",
         "3:00.",
         "His phone buzzes. Server alert. The server is down.",
-        "In the conference room, Brent, who has decided the show must go on, is still dancing. His stream never stuttered. Eleven viewers, all still there. Brent’s little six-gigabyte heartbeat wasn’t killing anything. It was just sad.",
+        "In the conference room, Brent, who has decided the show must go on, is still dancing. His stream never stuttered. Eleven viewers, all still there. All those hundreds of gigabytes of Brent weren’t killing anything. They were just sad.",
         "It wasn’t Brent.",
         "Dale’s triumph goes down like a bouncy castle at the end of a kid’s party. Then, from somewhere down the hall, he hears a sound. A low mechanical purr. Like a machine warming up.",
         "And a woman’s voice, very soft: “That’s it, baby. Get nice and hot for me.”",
