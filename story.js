@@ -33,13 +33,14 @@ const STORY = {
 
     start: {
       title: "2:47 a.m.",
+      revised: 1,
       text: [
         "The alarm goes off at 2:47 a.m., and Dale Pruitt wakes up with a raging hard-on for the first time since the Obama administration.",
         "He stares at it like it’s a ticket that got escalated to him by mistake. “Oh. Hey, buddy. Didn’t know you still worked here.”",
         "Week six on the happy pills. Week six of food tasting like food and his brain actually firing. Week six of noticing shit, like how the company server crashes at exactly 3:00 a.m. every goddamn night and not one person at Brightline Solutions gives a fuck.",
         "Dale’s laptop glows on the nightstand. Server status: green. 2:58. 2:59.",
         "3:00. Red. Dead. Gone.",
-        "“Gotcha, you little bitch,” Dale whispers, to the server or his dick. Honestly, either one.",
+        "“Gotcha, you little bitch,” Dale whispers, to the server and his dick.",
       ],
       choices: [
         { text: "Dig into the server logs right now", to: "logs" },
