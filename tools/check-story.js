@@ -18,7 +18,12 @@ const fs = require("fs");
 const path = require("path");
 
 const INTRO_TERMS = [
-  "Brightline", "happy pills", "DJ Synergy",
+  "Bev", "Ron", "Brent", "Kevin", "Gloria", "Tasha", "Earl", "Rosa", "Luis",
+  "Pam", "Gail", "Gus", "Marcus", "Sal", "Dr. Okafor", "Bound & Filed",
+  "Daily Staple", "Big Stan", "Holly", "Lady Lamina", "StapleDaddy",
+  "Synergy", "RonCoin", "ShibaGold", "xXr00tXx", "R.L. Ventures",
+  "Conference Room A", "Conference Room B", "The Willows", "CoreSwitch",
+  "supply closet", "Lexus", "Lakeshore",
 ];
 
 const src = fs.readFileSync(path.join(__dirname, "..", "story.js"), "utf8");
@@ -132,8 +137,9 @@ if (process.argv.includes("--intro")) {
     plain([...(passages[id].text || []), ...choicesOf(id).map((c) => c.text)].join(" "));
   console.log("\nWhere a first-time reader could meet each name (these scenes must explain it):");
   for (const term of INTRO_TERMS) {
-    const t = term.toLowerCase();
-    const mentions = new Set(ids.filter((id) => sceneText(id).includes(t)));
+    // Whole words only, so "Ron" doesn't count "front".
+    const t = new RegExp(`\\b${term.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`);
+    const mentions = new Set(ids.filter((id) => t.test(sceneText(id))));
     const firsts = [];
     const seen = new Set([start]);
     for (const queue = [start]; queue.length; ) {
