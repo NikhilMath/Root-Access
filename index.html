@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Root Access</title>
+  <meta name="description" content="The company server dies at exactly 3:00 a.m. every night. Six weeks into his happy pills, burned-out IT guy Dale Pruitt is finally going to find out why. An R-rated pick-your-path comedy you play in your browser.">
+  <meta name="theme-color" content="#f4f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1311" media="(prefers-color-scheme: dark)">
+  <!-- Browsers hang on to old tab icons, so bump ?v= whenever the icon changes. -->
+  <link rel="icon" href="favicon.svg?v=1" type="image/svg+xml">
+
+  <!-- The preview iMessage, Slack and the rest show for a link to the site.
+       Add og:url and og:image (full addresses) once the Netlify address is set. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Root Access">
+  <meta property="og:title" content="Root Access · An R-rated pick-your-path comedy">
+  <meta property="og:description" content="The company server dies at exactly 3:00 a.m. every night. Dale Pruitt is finally going to find out why.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <header class="site-header">
+      <p class="site-title">Root Access</p>
+    </header>
+
+    <article id="passage" aria-live="polite">
+      <h1 id="passage-title" tabindex="-1"></h1>
+      <div id="passage-text"></div>
+    </article>
+
+    <nav id="choices" aria-label="Choices"></nav>
+
+    <details class="story-map">
+      <summary>Story map</summary>
+      <div class="map-scroll">
+        <svg id="map-svg" aria-label="Story map"></svg>
+      </div>
+      <p class="map-legend">
+        <span class="legend-item"><span class="key key-current"></span>You are here</span>
+        <span class="legend-item"><span class="key key-visited"></span>Visited</span>
+        <span class="legend-item"><span class="key key-unvisited"></span>Not yet</span>
+        <span class="legend-item"><span class="key key-dead-end"></span><span id="dead-end-count">Dead ends</span></span>
+        <span class="legend-item" id="scene-count">Scenes</span>
+        <span class="legend-item legend-found" id="endings-found">Endings found</span>
+      </p>
+    </details>
+
+    <footer class="site-footer">
+      <button id="restart" type="button">Start over</button>
+      <button id="forget" type="button" class="quiet">Forget where I’ve been</button>
+      <p class="footer-note">Your map remembers every scene you’ve read, in this browser only. Start over keeps it.</p>
+      <p class="footer-credit">Made by <a href="https://nikhilmath.com">NikhilMath.com</a></p>
+    </footer>
+  </main>
+
+  <noscript>
+    <p class="noscript">This story needs JavaScript turned on to play.</p>
+  </noscript>
+
+  <script src="story.js"></script>
+  <script src="map.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

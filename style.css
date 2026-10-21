@@ -1,0 +1,397 @@
+/* Server-room colors: terminal green, like a status light that's still up. */
+:root {
+  --bg: #f4f5f1;
+  --surface: #ffffff;
+  --text: #1b1d1a;
+  --muted: #62675f;
+  --accent: #1d7a4a;
+  --accent-text: #ffffff;
+  --border: #dde1d8;
+  --border-strong: #b7bdb1;
+  --glow: #2b7de9;
+  --warn: #c2410c;
+  --font-body: Georgia, "Times New Roman", serif;
+  --font-ui: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1311;
+    --surface: #171c19;
+    --text: #e5ebe6;
+    --muted: #93a096;
+    --accent: #4ade80;
+    --accent-text: #0f1311;
+    --border: #28302b;
+    --border-strong: #4d5a51;
+    --glow: #5eb0ff;
+    --warn: #fb923c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Phones turned sideways keep the same text size. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+#app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Open, the map can spread wider than the reading column on big screens. */
+.story-map {
+  position: relative;
+  left: 50%;
+  width: min(64rem, calc(100vw - 2rem));
+  transform: translateX(-50%);
+  margin-top: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  font-family: var(--font-ui);
+}
+
+/* Closed, it lines up with the choices above it. */
+.story-map:not([open]) {
+  left: 0;
+  width: 100%;
+  transform: none;
+}
+
+.story-map summary {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* Big maps scroll inside their box, which follows where you are. */
+.map-scroll {
+  max-height: 55vh;
+  overflow: auto;
+  padding: 0 1rem;
+}
+
+/* On phones it's opened on purpose, so it gets most of the screen. */
+@media (max-width: 600px) {
+  .map-scroll {
+    max-height: 70vh;
+    max-height: 70svh;
+  }
+}
+
+#map-svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.map-node rect {
+  fill: var(--bg);
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.map-node text {
+  fill: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 12px;
+}
+
+.map-node.visited rect {
+  stroke: var(--accent);
+}
+
+.map-node.visited text {
+  fill: var(--text);
+}
+
+.map-node.current rect {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.map-node.current text {
+  fill: var(--accent-text);
+  font-weight: 600;
+}
+
+.map-node.missing rect,
+.map-node.unreachable rect {
+  stroke-dasharray: 4 3;
+}
+
+.map-node.missing text {
+  font-style: italic;
+}
+
+.map-node.dead-end rect {
+  stroke: var(--glow);
+  stroke-width: 1.5;
+}
+
+.map-glow-color {
+  flood-color: var(--glow);
+  flood-opacity: 0.55;
+}
+
+.map-node:hover rect,
+.map-node:focus-visible rect {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.map-node:focus {
+  outline: none;
+}
+
+.map-edge {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+}
+
+.map-edge.walked {
+  stroke: var(--accent);
+}
+
+.map-edge.back {
+  stroke-dasharray: 4 3;
+}
+
+.map-arrow {
+  fill: var(--border-strong);
+}
+
+.map-arrow.walked {
+  fill: var(--accent);
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem 0.875rem;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  white-space: nowrap;
+}
+
+.key {
+  display: inline-block;
+  flex: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.1875rem;
+  background: var(--bg);
+  vertical-align: middle;
+}
+
+.key-current {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.key-visited {
+  border-color: var(--accent);
+}
+
+.key-dead-end {
+  border-color: var(--glow);
+  box-shadow: 0 0 5px var(--glow);
+}
+
+#dead-end-count.over {
+  color: var(--warn);
+  font-weight: 600;
+}
+
+#passage-title {
+  margin: 0 0 1rem;
+  scroll-margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+#passage-title:focus {
+  outline: none;
+}
+
+#passage-text p {
+  margin: 0 0 1rem;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.choice {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  padding: 0.875rem 1.125rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.choice:hover,
+.choice:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.choice::before {
+  content: "→";
+  flex: none;
+  color: var(--accent);
+}
+
+.choice-text {
+  flex: 1;
+}
+
+/* Choices that lead somewhere you've already read sit back a little. */
+.choice.visited {
+  background: transparent;
+  color: var(--muted);
+}
+
+.choice.visited::before {
+  content: "✓";
+  color: var(--muted);
+}
+
+.choice-tag {
+  flex: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.the-end {
+  margin: 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer button {
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.375rem;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.site-footer button.quiet {
+  border-color: var(--border-strong);
+  background: transparent;
+  color: var(--muted);
+}
+
+.site-footer button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.footer-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.footer-credit {
+  flex-basis: 100%;
+  margin: 0.75rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.footer-credit a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  text-decoration: underline;
+}
+
+.legend-found {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.noscript {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
