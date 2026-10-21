@@ -1,15 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- A server rack: two units still green, the bottom one dead red at 3 a.m. -->
-  <rect x="10" y="4" width="44" height="56" rx="5" fill="#1b211d"/>
-  <rect x="15" y="10" width="34" height="13" rx="2.5" fill="#2c3530"/>
-  <rect x="15" y="26" width="34" height="13" rx="2.5" fill="#2c3530"/>
-  <rect x="15" y="42" width="34" height="13" rx="2.5" fill="#2c3530"/>
-  <g fill="#4b5850">
-    <rect x="19" y="15" width="14" height="3" rx="1.5"/>
-    <rect x="19" y="31" width="14" height="3" rx="1.5"/>
-    <rect x="19" y="47" width="14" height="3" rx="1.5"/>
+  <!-- The Brightline server rack at 3:00 a.m.: two units still up, the
+       bottom one dead red. tools/site-images.js turns it into favicon.ico
+       and apple-touch-icon.png, and draws the same rack on the link preview. -->
+  <defs>
+    <linearGradient id="rack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f3b34"/>
+      <stop offset="1" stop-color="#161d19"/>
+    </linearGradient>
+    <radialGradient id="dead" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff4d4d" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ff4d4d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- The rack -->
+  <rect x="8" y="2" width="48" height="60" rx="7" fill="url(#rack)" stroke="#55665b" stroke-width="2"/>
+
+  <!-- Three units, each with a vent and a status light -->
+  <g fill="#0d1310">
+    <rect x="13" y="8" width="38" height="15" rx="3"/>
+    <rect x="13" y="25" width="38" height="15" rx="3"/>
+    <rect x="13" y="42" width="38" height="15" rx="3" stroke="#7f1d1d" stroke-width="1.5"/>
   </g>
-  <circle cx="42" cy="16.5" r="3.5" fill="#4ade80"/>
-  <circle cx="42" cy="32.5" r="3.5" fill="#4ade80"/>
-  <circle cx="42" cy="48.5" r="3.5" fill="#ef4444"/>
+  <g fill="#3e4d44">
+    <rect x="17" y="14" width="15" height="3.5" rx="1.75"/>
+    <rect x="17" y="31" width="15" height="3.5" rx="1.75"/>
+    <rect x="17" y="48" width="15" height="3.5" rx="1.75"/>
+  </g>
+  <circle cx="42" cy="15.5" r="4.5" fill="#4ade80"/>
+  <circle cx="42" cy="32.5" r="4.5" fill="#4ade80"/>
+
+  <!-- The dead one, glowing -->
+  <circle cx="42" cy="49.5" r="11" fill="url(#dead)"/>
+  <circle cx="42" cy="49.5" r="5" fill="#ff3b3b"/>
+  <circle cx="40.6" cy="48.1" r="1.6" fill="#ffd0d0"/>
 </svg>
