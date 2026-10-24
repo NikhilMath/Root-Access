@@ -706,11 +706,11 @@ const STORY = {
 
     vendor_hotel: {
       title: "Room 214",
-      revised: 1,
+      revised: 2,
       text: [
         "Room 214 at the Hearthside Inn has a hot tub in the corner that nobody should ever use.",
         "What happens next is, at first, extremely normal and extremely great, and your pills deserve a raise.",
-        "Then Tasha pulls a bag of zip ties out of her suitcase.",
+        "Then Tasha pulls a bag of Velcro cable ties out of her suitcase. The soft kind. The reusable kind. Tasha is a professional.",
         "“I need to tell you something,” she says. “I’m really into cable management.”",
         "You don’t know what that means. Forty minutes later, you know exactly what it means, and so does the couple in Room 216, who bang on the wall twice, and then, after a while, stop banging and start taking notes.",
         "Afterward, Tasha lights a cigarette she isn’t allowed to light. “Come work for me,” she says. “CoreSwitch. Scottsdale. I need a tech. Fuck your 3 a.m. server.”",
@@ -723,13 +723,13 @@ const STORY = {
 
     vendor: {
       title: "Cable Management",
-      revised: 1,
+      revised: 2,
       ending: true,
       text: [
         "You never go back to Brightline Solutions.",
-        "You send Brent, your boss, a two-word resignation email. One of the words is “you.” You move to Scottsdale with Tasha in a U-Haul full of zip ties.",
+        "You send Brent, your boss, a two-word resignation email. One of the words is “you.” You move to Scottsdale with Tasha in a U-Haul full of Velcro cable ties.",
         "You’re happy. Truly, stupidly happy. She sells servers. You install them. On weekends, you manage each other’s cables. The neighbors bring it up at an HOA meeting, and lose.",
-        "You never find out why the Brightline server died at 3:00 a.m. every night. Sometimes, lying awake, you wonder. Then you look over at Tasha, snoring, with a zip tie still on her wrist like a friendship bracelet, and decide you don’t give a fuck.",
+        "You never find out why the Brightline server died at 3:00 a.m. every night. Sometimes, lying awake, you wonder. Then you look over at Tasha, snoring, a coil of Velcro ties on the nightstand, and decide you don’t give a fuck.",
         "It’s the good kind of not giving a fuck. You’d forgotten there was a good kind.",
       ],
       choices: [],
