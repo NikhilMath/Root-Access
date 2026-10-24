@@ -338,10 +338,10 @@ const STORY = {
 
     gloria: {
       title: "Front Desk",
-      revised: 1,
+      revised: 2,
       text: [
         "Gloria lowers her voice, which for Gloria means the second floor can still hear it.",
-        "She tells you that Brent’s been coming in “at all hours” since his divorce. That Kevin from IT vapes in the stairwell. That Bev just bought a brand-new Lexus, “cash, hon, cash,” even though the company hasn’t had a good year since 2019.",
+        "She tells you that Brent’s been coming in “at all hours” since his divorce. That Kevin vapes in the stairwell. That Bev just bought a brand-new Lexus, “cash, hon, cash,” even though the company hasn’t had a good year since 2019.",
         "“And Ron,” she says. Ron Lund, Bev’s husband, a tan old man whose title is Chief Visionary Officer and whose job is golf. “Ron’s been asking everybody for the server password. Even me. I told him it was ‘password.’”",
         "“Is it?” you ask.",
         "Gloria gives you a look. “Honey, I don’t even know what a server is.”",
@@ -1357,11 +1357,11 @@ const STORY = {
 
     party: {
       title: "The Holiday Party",
-      revised: 1,
+      revised: 2,
       text: [
         "Friday, 7 p.m. Gloria from the front desk and a budget of four hundred dollars have turned the Brightline office into a winter wonderland that has been through a divorce.",
         "There’s tinsel on the server rack. There’s an open bar in the break room, run by a guy from the bar by the highway. There are forty-three employees and their plus-ones, and within forty minutes, all of them are drunk.",
-        "Bev Lund is in a sweater with a light-up Rudolph on it, hugging everyone. Her husband, Ron, the Chief Visionary Officer, is at the bar on his third scotch, holding his phone like a grenade and glaring at Bev across the room. Kevin, from IT, is ladling something purple out of a punch bowl and winking at people. Brent, the VP of Operations, is nowhere.",
+        "Bev Lund is in a sweater with a light-up Rudolph on it, hugging everyone. Her husband, Ron, the Chief Visionary Officer, is at the bar on his third scotch, holding his phone like a grenade and glaring at Bev across the room. Kevin, the other half of IT, is ladling something purple out of a punch bowl and winking at people. Brent, the VP of Operations, is nowhere.",
         "You have one ginger ale and the whole night in front of you. In eight hours, the Daily Staple drops.",
       ],
       choices: [
@@ -1447,10 +1447,10 @@ const STORY = {
 
     conga: {
       title: "The Conga Line",
-      revised: 1,
+      revised: 2,
       text: [
         "Somebody starts a conga line, and within a minute it’s thirty people long and going everywhere.",
-        "Through the kitchen. Through accounting. Briefly through the men’s room, with apologies. Bev is in it, her light-up Rudolph sweater blinking. Kevin from IT is in it. The seventy-four-year-old guy from payroll is leading it, shirtless, and he has a tattoo of a woman riding a dolphin, and nobody has ever been more surprised by anything.",
+        "Through the kitchen. Through accounting. Briefly through the men’s room, with apologies. Bev is in it, her light-up Rudolph sweater blinking. Kevin is in it. The seventy-four-year-old guy from payroll is leading it, shirtless, and he has a tattoo of a woman riding a dolphin, and nobody has ever been more surprised by anything.",
         "Then the conga line turns into the server room.",
         "You scream, “NOT THE SERVER ROOM.” Nobody listens. Nobody ever listens to IT.",
         "Thirty drunk people conga around the rack. Somebody’s hip hits a power strip. Somebody’s elbow hits the big red button on the wall that says <em>EMERGENCY. DO NOT PRESS.</em>",
@@ -1576,13 +1576,13 @@ const STORY = {
 
     bev_party: {
       title: "Murder Eyes",
-      revised: 1,
+      revised: 2,
       text: [
         "Bev is by the window with a glass of boxed wine and a smile that could kill a houseplant.",
         "“Hon,” she says when you come over. “I need you to stand right here. Because if you don’t, I’m going to walk over there and do something to Ronald with the cake knife, and it’s Christmas.”",
         "You stand right there.",
         "“Thirty-one years,” Bev says. “You know what I wanted for Christmas this year? I wanted to stop being afraid of that man. Not of him. Of what he’d take.” She sips. “Everybody in this room has a job because of a stapler. And he’d take half of it. He’d sell Big Stan, my best stapler, for parts.”",
-        "Across the room, Ron has finally passed out in a chair, mouth open, phone clutched to his chest. Kevin from IT is gently placing a paper party hat on his head.",
+        "Across the room, Ron has finally passed out in a chair, mouth open, phone clutched to his chest. Kevin is gently placing a paper party hat on his head.",
         "“So,” Bev says. “What are we going to do, hon?”",
       ],
       choices: [
@@ -1679,11 +1679,11 @@ const STORY = {
 
     whistle: {
       title: "Whistleblower",
-      revised: 1,
+      revised: 2,
       ending: true,
       text: [
         "You tap the mic, and you tell them everything you know.",
-        "It takes nine minutes. Nobody moves. By the end, Pam from HR is crying, Kevin from IT is filming, and the guy from payroll has put his shirt back on out of respect.",
+        "It takes nine minutes. Nobody moves. By the end, Pam from HR is crying, Kevin is filming, and the guy from payroll has put his shirt back on out of respect.",
         "At 12:01 a.m., Kevin posts the video. By morning, it has nine million views. By Monday, it’s on the national news: <em>GRANDMA’S SECRET OFFICE SUPPLY EMPIRE</em>. There are think pieces. There is a late-night sketch. Big Stan the stapler gets a verified account.",
         "Bound & Filed goes from forty-one thousand subscribers to nine hundred thousand in a week. Bev goes on a morning show in her lemon bar apron and says “hon” on live TV eleven times. Brightline Solutions finally admits what it is, renames itself Bound & Filed Inc. and gives every employee stock.",
         "You get fired, technically, for leaking company secrets, and rehired the next day as Head of Transparency, a job Bev invents just for you. It pays double. It comes with a stapler.",
