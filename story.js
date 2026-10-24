@@ -472,7 +472,7 @@ const STORY = {
 
     search_brent: {
       title: "Brent’s Desk",
-      revised: 1,
+      revised: 2,
       text: [
         "At 12:01, Brent leaves for lunch. At 12:02, you’re in his desk.",
         "Top drawer: mirrored sunglasses. A lanyard that says <em>VIP — ALL ACCESS</em>. Glow sticks. A tube of hemorrhoid cream. A USB stick labeled <em>SYNERGY MASTERS — DO NOT LISTEN</em>.",
@@ -482,7 +482,7 @@ const STORY = {
       ],
       choices: [
         { text: "Dive under Brent’s desk", to: "brent_call" },
-        { text: "Pretend you’re fixing his computer", to: "lunch" },
+        { text: "Tell him you were fixing his computer and follow him to the break room", to: "lunch" },
       ],
     },
 
