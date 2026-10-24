@@ -285,9 +285,9 @@ const STORY = {
 
     waffle: {
       title: "The Waffle Barn",
-      revised: 1,
+      revised: 2,
       text: [
-        "At 5:15 a.m., the Waffle Barn on Route 9 is you, two truckers, and a waitress named Crystal who calls you “sugar” and doesn’t make you feel like a pervert for ordering three waffles.",
+        "At 5:15 a.m., the Waffle Barn on Route 9 is you, two truckers, and a waitress named Crystal who calls you “sugar.”",
         "Food tastes like food. That’s still new. You almost cry into the syrup.",
         "You take a napkin and write <em>WHO IS KILLING MY SERVER?</em> across the top. Under it, you write <em>everybody</em>. Then you cross that out and write <em>somebody</em>. Then you draw a pretty good server with a sad face, and a less good portrait of your libido as a tiny horned devil, which you scribble out when Crystal comes back with the coffee.",
         "“Rough night, sugar?” she asks.",
