@@ -472,7 +472,7 @@ const STORY = {
 
     search_brent: {
       title: "Brent’s Desk",
-      revised: 2,
+      revised: 3,
       text: [
         "At 12:01, Brent leaves for lunch. At 12:02, you’re in his desk.",
         "Top drawer: mirrored sunglasses. A lanyard that says <em>VIP — ALL ACCESS</em>. Glow sticks. A tube of hemorrhoid cream. A USB stick labeled <em>SYNERGY MASTERS — DO NOT LISTEN</em>.",
@@ -482,7 +482,22 @@ const STORY = {
       ],
       choices: [
         { text: "Dive under Brent’s desk", to: "brent_call" },
-        { text: "Tell him you were fixing his computer and follow him to the break room", to: "lunch" },
+        { text: "Pretend you’re fixing his computer", to: "brent_caught" },
+      ],
+    },
+
+    brent_caught: {
+      title: "Defragging",
+      text: [
+        "By the time Brent’s head comes around the door, you’re bent over his keyboard, typing with great confidence. You’re typing <em>asdfghjkl</em>. You’re typing it a lot.",
+        "“What are you doing in my office?”",
+        "“Your computer’s been running slow,” you say. “I’m defragging it.” Nobody has defragged anything since 2009. Brent doesn’t know that. Brent nods like a man who absolutely knows that.",
+        "He looks at his drawers. You closed the drawers. You’re almost positive you closed the drawers.",
+        "He picks up his salad. “Defrag faster. It’s December birthdays in the break room, and Bev takes attendance.” Then he holds the door open and waits, because Brent is not leaving you alone in his office again. “Per my last email.”",
+        "So you walk to the break room with your boss, side by side, in total silence, him holding his salad, you thinking very hard about glow sticks and hemorrhoid cream.",
+      ],
+      choices: [
+        { text: "Go to the birthday lunch with Brent", to: "lunch" },
       ],
     },
 
