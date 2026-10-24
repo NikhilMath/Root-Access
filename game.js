@@ -26,6 +26,52 @@
   const trail = loadTrail();
   let lastId = null;
 
+  // The scenes this playthrough has gone through, so the Back link can step
+  // back one. Kept for this tab only, so a reload doesn't lose your place.
+  const PATH_KEY = "root-access-path";
+  let path = loadPath();
+
+  function loadPath() {
+    try {
+      return JSON.parse(sessionStorage.getItem(PATH_KEY)) || [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function savePath() {
+    try {
+      sessionStorage.setItem(PATH_KEY, JSON.stringify(path));
+    } catch (e) {
+      // No storage: Back still works until the page reloads.
+    }
+  }
+
+  // Step back along the path, forward along a choice, or start a new path
+  // when the reader jumps somewhere else (a shared link, Start over).
+  function updatePath(id) {
+    if (path[path.length - 1] === id) return;
+    if (path[path.length - 2] === id) path.pop();
+    else if (lastId && path[path.length - 1] === lastId && (STORY.passages[lastId]?.choices || []).some((c) => c.to === id)) path.push(id);
+    else path = [id];
+    savePath();
+  }
+
+  // Where Back goes: the scene before this one on the path, or, if the reader
+  // landed here from a link, the first scene with a choice that leads here.
+  function previousId(id) {
+    if (path.length >= 2) return path[path.length - 2];
+    return Object.keys(STORY.passages).find((from) => (STORY.passages[from].choices || []).some((c) => c.to === id));
+  }
+
+  function backLink(to) {
+    const a = document.createElement("a");
+    a.className = "back-link";
+    a.href = "#" + encodeURIComponent(to);
+    a.textContent = `Back to ${STORY.passages[to].title || "the last scene"}`;
+    return a;
+  }
+
   function loadTrail() {
     try {
       const saved = JSON.parse(localStorage.getItem(SAVE_KEY));
@@ -116,6 +162,9 @@
       choicesEl.replaceChildren(...choices.map((c) => choiceLink(c.text, c.to, trail.visited.has(c.to))));
     }
 
+    const back = previousId(id);
+    if (back && STORY.passages[back]) choicesEl.append(backLink(back));
+
     document.title = passage.title ? `${passage.title} · Root Access` : "Root Access";
   }
 
@@ -129,6 +178,7 @@
     if (last && (last.choices || []).some((c) => c.to === id)) {
       trail.walked.add(`${lastId}→${id}`);
     }
+    updatePath(id);
     if (passage) {
       trail.visited.add(id);
       if (passage.revised) trail.revs[id] = passage.revised;
