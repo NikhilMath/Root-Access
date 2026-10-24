@@ -12,38 +12,38 @@ Source: [Root Access – Story Notes & Opening (Book 3, R-rated)](https://docs.g
 
 ## Premise
 
-- Hero: Dale Pruitt, burned-out IT guy at Brightline Solutions. Was deeply depressed; six weeks on "happy pills," now clear-headed and noticing things.
+- Hero: you. Written in second person, with no name and no gender (decided 2026-10-23; an earlier draft called the hero Dale Pruitt). People call you "IT," "hon" or "sugar," never "he," "she," "man" or "sir," and the body jokes stay ones anybody could have (horny, your crotch, your libido). You're the burned-out IT department at Brightline Solutions. You were deeply depressed; six weeks on "happy pills," you're clear-headed and noticing things.
 - Mystery: the company server goes down at exactly 3:00 a.m. every night.
-- Twist (total shock, readers should not solve it): the sweet, beloved CEO runs a secret office-supply fetish site that's keeping the company afloat. Dale must choose whether to blow the whistle or protect it.
+- Twist (total shock, readers should not solve it): the sweet, beloved CEO runs a secret office-supply fetish site that's keeping the company afloat. You must choose whether to blow the whistle or protect it.
 - Misdirects across branches: crypto mining, embezzlement, a hacker, a CEO affair.
 
 ## Red Herring: The Dick Boss
 
-- Dale's direct boss is a total dick, so everyone wants it to be him. He's cagey and in the office weirdly late.
+- Your direct boss is a total dick, so everyone wants it to be him. He's cagey and in the office weirdly late.
 - Secret: he's "DJ Synergy," livestreaming awful EDM remixes of corporate sounds (Teams ringtone, printer-jam beep) from the big conference room to his 11 loyal viewers, using the company's internet because his home Wi-Fi sucks. That explains the bandwidth spikes.
-- Reveal: Dale catches him mid-set in sunglasses and a lanyard, thinks he's solved it, then 3 a.m. hits and the server crashes anyway.
+- Reveal: you catch him mid-set in sunglasses and a lanyard, think you've solved it, then 3 a.m. hits and the server crashes anyway.
 
 ## Raunch Ideas
 
 - Fetish site: lovingly lit hole-punch photo shoots, erotic captions ("a firm, satisfying staple"), the CEO's dirty talk to a laminator.
 - Pills: side effects in way too much detail; libido returning at the worst moments.
-- Constant swearing, especially Dale's inner monologue going from dead-inside to filthy and alive.
+- Constant swearing, especially your inner monologue going from dead-inside to filthy and alive.
 - Hookup/flirting branches that cut away right when they get ridiculous.
 
 ## Opening Scene (page 1)
 
-The alarm goes off at 2:47 a.m., and Dale Pruitt wakes up with a raging hard-on for the first time since the Obama administration.
+The alarm goes off at 2:47 a.m., and you wake up horny as hell for the first time since the Obama administration.
 
-He stares at it like it's a ticket that got escalated to him by mistake. "Oh. Hey, buddy. Didn't know you still worked here."
+You look down at your crotch like it's a ticket that got escalated to you by mistake. "Oh. Hey, buddy. Didn't know you still worked here."
 
-Week six on the happy pills. Week six of food tasting like food and his brain actually firing. Week six of noticing shit, like how the company server crashes at exactly 3:00 a.m. every goddamn night and not one person at Brightline Solutions gives a fuck.
+Week six on the happy pills. Week six of food tasting like food and your brain actually firing. Week six of noticing shit, like how the company server crashes at exactly 3:00 a.m. every goddamn night and not one person at Brightline Solutions gives a fuck.
 
-Dale's laptop glows on the nightstand. Server status: green. 2:58. 2:59.
+Your laptop glows on the nightstand. Server status: green. 2:58. 2:59.
 
 3:00. Red. Dead. Gone.
 
-"Gotcha, you little bitch," Dale whispers, to the server or his dick. Honestly, either one.
+"Gotcha, you little bitch," you whisper, to the server and your crotch.
 
-> If Dale digs into the server logs right now, turn to page 4.
+> If you dig into the server logs right now, turn to page 4.
 >
-> If Dale gets dressed and drives to the office to catch it in the act, turn to page 7.
+> If you get dressed and drive to the office to catch it in the act, turn to page 7.
