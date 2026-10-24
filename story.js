@@ -50,9 +50,9 @@ const STORY = {
 
     logs: {
       title: "The Server Logs",
-      revised: 3,
+      revised: 4,
       text: [
-        "You prop the laptop on your knees. Your knees won’t stop bouncing. Nothing on you will stop doing anything. You decide that’s a problem for later and open the logs.",
+        "You prop the laptop on your knees. Your knees won’t stop bouncing. Every part of you is wide awake, and a few parts are very, very awake. You decide that’s a problem for later and open the logs.",
         "At 2:59:59, nothing. At 3:00:00, forty-one thousand connections hit the server at once, from Germany, Japan, Brazil and one Holiday Inn Express outside Omaha. The server takes it like a champ for about four seconds, then lies down and dies.",
         "That’s weird thing number one.",
         "Weird thing number two: somebody keeps logging in as an administrator with an account you never made. The username is <em>xXr00tXx</em>, which means it’s either a hacker or a fourteen-year-old.",
