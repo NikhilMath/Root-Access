@@ -67,7 +67,7 @@ const STORY = {
 
     trace: {
       title: "xXr00tXx",
-      revised: 2,
+      revised: 3,
       text: [
         "It takes you eleven minutes and an energy drink you find in the back of the fridge, expiration date 2016, to trace the login. It isn’t coming from Russia. It isn’t coming from China.",
         "It’s coming in through Brightline’s own VPN, on the executive login, the one only the bosses have the password for. Whoever xXr00tXx is, they’re not breaking in. They have a key.",
@@ -75,7 +75,7 @@ const STORY = {
         "You pull it up on Street View. A mansion. A three-car garage. A fountain in the front yard: a marble cherub pissing into a clamshell.",
         "Which makes no sense, because as far as anyone can tell, Brightline Solutions is broke. It hasn’t turned a profit since 2019. Nobody’s had a raise since 2019. The coffee machine takes quarters. Last Christmas, the bonus was a fleece vest.",
         "“Who the fuck at Brightline can afford a pissing cherub?” you ask your empty bedroom.",
-        "It’s 3:31 a.m. You are wide awake, and so, still, is everything else.",
+        "It’s 3:31 a.m. You are wide awake, and everything else is so still.",
       ],
       choices: [
         { text: "Drive to Lakeshore Estates in your pajamas", to: "lakeshore" },
