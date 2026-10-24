@@ -2,7 +2,7 @@
 
 _Book 3 of the IT Trilogy (R-rated comedy mystery, choose-your-own-adventure)_
 
-Source: [Root Access – Story Notes & Opening (Book 3, R-rated)](https://docs.google.com/document/d/1WOn4ob5KeiI3Vh2YDZvAtvHFqc6lBEnF9Y8vA4cPtm4/edit) (Google Doc)
+These notes are the only copy. They started as a Google Doc, which was deleted on 2026-10-23.
 
 ## Format
 
