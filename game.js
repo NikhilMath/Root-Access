@@ -15,6 +15,8 @@
   const deadEndCount = document.getElementById("dead-end-count");
   const sceneCount = document.getElementById("scene-count");
   const endingsFound = document.getElementById("endings-found");
+  const terminal = document.getElementById("terminal");
+  const commandEl = document.getElementById("command");
   sceneCount.textContent = `Scenes: ${Object.keys(STORY.passages).length} of ${STORY.targetScenes}`;
   const endings = Object.keys(STORY.passages).filter((id) => STORY.passages[id].ending);
 
@@ -187,6 +189,7 @@
     saveTrail();
 
     showPassage(id, passage);
+    typeCommand(`cat ${id}.txt`);
     const { deadEnds } = drawStoryMap(mapSvg, STORY, id, trail);
     const over = deadEnds > STORY.maxEndings;
     deadEndCount.textContent = `Dead ends: ${deadEnds} of ${STORY.maxEndings}${over ? " (too many)" : ""}`;
@@ -198,6 +201,46 @@
     window.scrollTo(0, 0);
     titleEl.focus({ preventScroll: true });
   }
+
+  // The terminal types out a command for each scene, then shows the scene
+  // under it. A click or a key press skips ahead. People who ask their
+  // system for less motion get the scene straight away.
+  const lessMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let typingTimer = null;
+  let command = "";
+
+  function typeCommand(text) {
+    clearTimeout(typingTimer);
+    command = text;
+    if (lessMotion.matches) {
+      finishTyping();
+      return;
+    }
+    commandEl.textContent = "";
+    terminal.classList.add("typing");
+    let typed = 0;
+    function typeNext() {
+      typed++;
+      commandEl.textContent = command.slice(0, typed);
+      // People type in bursts, not like a metronome.
+      if (typed < command.length) typingTimer = setTimeout(typeNext, 30 + Math.random() * 45);
+      else typingTimer = setTimeout(finishTyping, 220);
+    }
+    typingTimer = setTimeout(typeNext, 150);
+  }
+
+  function finishTyping() {
+    clearTimeout(typingTimer);
+    commandEl.textContent = command;
+    terminal.classList.remove("typing");
+  }
+
+  function skipTyping() {
+    if (terminal.classList.contains("typing")) finishTyping();
+  }
+
+  document.addEventListener("pointerdown", skipTyping);
+  document.addEventListener("keydown", skipTyping);
 
   // Scroll the map box (not the page) so the current scene is in the middle.
   // A closed map has no size, so this only works once it's open.
