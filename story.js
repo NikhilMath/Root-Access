@@ -1359,7 +1359,7 @@ const STORY = {
 
     tasha_date: {
       title: "Fun Dungeon",
-      revised: 1,
+      revised: 2,
       text: [
         "Tasha Reyes, the vendor from CoreSwitch Networks, takes you to a place called the Fun Dungeon, which is skee-ball and beer, and beats you at everything.",
         "She wins four thousand tickets and trades them for a stuffed shark the size of a toddler. She gives it to you. “His name is Gary,” she says. “He’s yours now. Raise him right.”",
@@ -1368,8 +1368,8 @@ const STORY = {
         "“You have no idea,” you say.",
       ],
       choices: [
-        { text: "Invite her as your date", to: "tasha_party" },
-        { text: "Tell her you’ll see her there", to: "party" },
+        { text: "Ask her to be your date", to: "tasha_party" },
+        { text: "Play it cool. You’ve got a server to watch.", to: "party" },
       ],
     },
 
@@ -1500,9 +1500,9 @@ const STORY = {
 
     tasha_party: {
       title: "Plus One",
-      revised: 1,
+      revised: 2,
       text: [
-        "Tasha Reyes, the vendor from CoreSwitch Networks, shows up at the Brightline holiday party in a red dress, and the whole office turns around. Somebody invited her. Possibly everybody did.",
+        "Tasha Reyes, the vendor from CoreSwitch Networks, shows up at the Brightline holiday party in a red dress, and the whole office turns around. Half of them claim they invited her.",
         "She’s carrying a gift-wrapped box the size of a minifridge. “Demo server,” she says, handing it to you. “Ninety-day trial. Merry Christmas, IT.”",
         "“You got me a server?”",
         "“I got you a <em>rack</em>,” she says, and kisses you right in front of Gloria from the front desk, who drops her drink.",
