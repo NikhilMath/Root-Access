@@ -737,7 +737,7 @@ const STORY = {
 
     kevin_camera: {
       title: "Spy Cam",
-      revised: 1,
+      revised: 2,
       text: [
         "Kevin is thrilled. “Bro. A <em>stakeout</em>.”",
         "Kevin, twenty-three and the other half of the IT department, has a plan. Kevin’s plan is a baby monitor borrowed from his sister, duct-taped to the top of the server rack and pointed at the door.",
@@ -745,7 +745,7 @@ const STORY = {
         "“We’re not saying ‘we see you,’” you say.",
         "Kevin also gives you a gummy “for focus.” You put it in your pocket. You are not insane.",
         "“Also, bro,” Kevin says, “the hot vendor lady was asking about you. Tasha. From CoreSwitch. She’s in town all week selling servers. She left you her card.” He waggles his eyebrows. “Her <em>card</em>, bro.”",
-        "At 6:15, Brent Koslowski, VP of Operations and your boss, walks out of the building with a duffel bag, checks over his shoulder twice and gets in his car.",
+        "At 6:15, Brent walks out of the building with a duffel bag, checks over his shoulder twice and gets in his car.",
       ],
       choices: [
         { text: "Go home and come back at one", to: "stakeout" },
@@ -962,10 +962,10 @@ const STORY = {
 
     trip_confb: {
       title: "The Rave",
-      revised: 1,
+      revised: 2,
       text: [
         "Conference Room B is the best party you have ever been to.",
-        "There’s a man in mirrored sunglasses and a lanyard dancing in front of a ring light, and the music is the Teams ringtone, slowed down and run through a beat, and it is the most beautiful thing ever written. The man is Brent Koslowski, VP of Operations, your boss. Brent, it turns out, is a DJ. Brent is DJ Synergy. You know this the way you know things in dreams.",
+        "There’s a man in mirrored sunglasses and a lanyard dancing in front of a ring light, and the music is the Teams ringtone, slowed down and run through a beat, and it is the most beautiful thing ever written. The man is Brent. Brent, it turns out, is a DJ. Brent is DJ Synergy. You know this the way you know things in dreams.",
         "Brent sees you and freezes. You throw your arms in the air and scream, “DROP IT, BRENT.”",
         "Brent drops it.",
         "You dance for an hour. You hype. Brent mixes. The chat goes wild. The viewer count goes from eleven to twelve. Brent cries a little. You cry a lot. At one point you hug, and Brent says, “Nobody’s ever danced with me before,” and you say, “I love you, Synergy,” and mean it with your whole chemically enhanced heart.",
