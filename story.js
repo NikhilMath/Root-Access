@@ -1340,7 +1340,7 @@ const STORY = {
 
     brent_music: {
       title: "Fast as Fuck",
-      revised: 1,
+      revised: 2,
       text: [
         "Brent Koslowski, VP of Operations, is in Conference Room B with the door locked and the blinds down at 2 p.m. on a Thursday, which is new.",
         "When you knock, Brent opens the door two inches. He has glitter on his face.",
@@ -1348,6 +1348,8 @@ const STORY = {
         "“Is that an order?”",
         "Brent looks at you for a long time. Something passes over his face. Fear, maybe. Or hope. “It’s a request,” he says. “Please.”",
         "Brent has never said please to you before. It does something to you. Not a sex thing. A human thing. Those are new too.",
+        "He starts to shut the door, then stops. “And bring a plus-one. Everybody’s bringing a plus-one. I need bodies on that dance floor.” He narrows his eyes. “What about that vendor? Tasha. Gloria says she keeps asking about you.”",
+        "You think about Tasha a normal amount, which is constantly.",
       ],
       choices: [
         { text: "Text Tasha, the hot vendor", to: "tasha_date" },
