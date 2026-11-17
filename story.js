@@ -855,11 +855,12 @@ const STORY = {
 
     brent_deal: {
       title: "Yes, Boss",
-      revised: 1,
+      revised: 2,
       text: [
         "Your terms are simple.",
-        "Brent approves the new chair you asked for in 2017. Brent approves your vacation. Brent says, out loud, “You were right about everything, and I am a little man.” Brent says it twice, because the first time he said it like a question.",
-        "“And you call me ‘boss,’” you say.",
+        "“One. The new chair I asked for in 2017. Two. My vacation, approved. Three. You say, out loud, ‘You were right about everything, and I am a little man.’”",
+        "Brent approves the chair. Brent approves the vacation. Brent says, “You were right about everything, and I am a little man.” He says it twice, because the first time he said it like a question.",
+        "“Four,” you say. “You call me ‘boss.’”",
         "“Yes, boss,” says DJ Synergy, VP of Operations, in his sunglasses.",
         "You have never had power before. It feels like a hot tub. It feels like a hot tub full of money. You make it last. By the time you shake on it, it’s almost three.",
         "Then your phone buzzes. Server alert. 3:00 a.m. The server is down, and Brent has been standing right here the whole time, his stream still running, not a stutter.",
