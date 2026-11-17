@@ -1253,11 +1253,11 @@ const STORY = {
 
     tell_bev_now: {
       title: "The Look on Her Face",
-      revised: 1,
+      revised: 2,
       text: [
         "You show Bev the numbers. Three hundred and forty thousand dollars. R.L. Ventures. <em>Visionary services</em>.",
         "Bev reads it twice. Then she sets down her coffee very carefully, like it might go off.",
-        "“That son of a bitch,” she says softly. “That tan, useless, Camaro-driving son of a bitch.” She takes a breath. “Hon, you have done me a great kindness. Now please step out, because I’m about to say some words a Christian woman shouldn’t say in front of the help.”",
+        "“That son of a bitch,” she says softly. “That tan, useless, Camaro-driving son of a bitch.” She takes a breath. “Hon, you have done me a great kindness. Now please step out, because I’m about to say some words a Christian woman shouldn’t say in front of anybody.”",
         "You step out. Through the door, for eleven solid minutes, you hear Bev Lund say words you didn’t know existed. Some of them are in Polish. One is so bad the motion-sensor lights in the hallway turn themselves off.",
       ],
       choices: [
