@@ -1377,11 +1377,12 @@ const STORY = {
 
     party: {
       title: "The Holiday Party",
-      revised: 2,
+      revised: 3,
       text: [
         "Friday, 7 p.m. Gloria from the front desk and a budget of four hundred dollars have turned the Brightline office into a winter wonderland that has been through a divorce.",
         "There’s tinsel on the server rack. There’s an open bar in the break room, run by a guy from the bar by the highway. There are forty-three employees and their plus-ones, and within forty minutes, all of them are drunk.",
         "Bev Lund is in a sweater with a light-up Rudolph on it, hugging everyone. Her husband, Ron, the Chief Visionary Officer, is at the bar on his third scotch, holding his phone like a grenade and glaring at Bev across the room. Kevin, the other half of IT, is ladling something purple out of a punch bowl and winking at people. Brent, the VP of Operations, is nowhere.",
+        "Then you hear it, passed through the crowd from the coat rack to the punch bowl in about four seconds: Tasha’s here. Tasha, the hot vendor from CoreSwitch. Gloria says she asked for you by name.",
         "You have one ginger ale and the whole night in front of you. In eight hours, the Daily Staple drops.",
       ],
       choices: [
