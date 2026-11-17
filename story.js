@@ -1114,7 +1114,7 @@ const STORY = {
 
     bev_ron: {
       title: "Thirty-One Years",
-      revised: 2,
+      revised: 3,
       text: [
         "Bev unwraps a butterscotch and tells you about Ron.",
         "Thirty-one goddamn years. Ron has never held a job. Not one. Ron calls himself Chief Visionary Officer because she wouldn’t let him be Chief Executive. Ron put their savings into RonCoin, and RonCoin is now worth less than the paper it isn’t printed on. Ron has a podcast. Nobody listens to the fucking podcast. Ron has a bookie named Sal, who sends them a fruit basket every Christmas out of gratitude.",
@@ -1124,7 +1124,7 @@ const STORY = {
         "She checks her watch. “Come on, hon. I’ve got a shoot to finish, and that stapler isn’t going to fuck itself.”",
       ],
       choices: [
-        { text: "Offer to dig into the company’s books", to: "the_books" },
+        { text: "Find out where Ron gets his money", to: "the_books" },
         { text: "Wait, what’s that noise at the back door?", to: "ron_snoop" },
       ],
     },
@@ -1148,7 +1148,7 @@ const STORY = {
 
     luis: {
       title: "Lighting Guy",
-      revised: 1,
+      revised: 2,
       text: [
         "Luis is twenty-six, a film student at the community college, and the best lighting guy you have ever seen, and you have seen exactly zero lighting guys.",
         "“The trick with a hole punch,” Luis says, adjusting a light a quarter of an inch, “is you have to make her feel <em>seen</em>.”",
@@ -1159,7 +1159,7 @@ const STORY = {
       ],
       choices: [
         { text: "Get to work on the server", to: "fix_server" },
-        { text: "Ask Bev to show you the money", to: "the_books" },
+        { text: "Find out where Ron gets his money", to: "the_books" },
       ],
     },
 
@@ -1199,7 +1199,7 @@ const STORY = {
 
     kevin_help: {
       title: "Bro",
-      revised: 1,
+      revised: 2,
       text: [
         "Kevin, the other half of the IT department, arrives at 5:15 a.m. in pajama pants and a beanie, holding an energy drink in each hand like a gunslinger.",
         "You show him Bound & Filed. You brace yourself.",
@@ -1211,20 +1211,22 @@ const STORY = {
       ],
       choices: [
         { text: "Go home and sleep", to: "thursday" },
-        { text: "Ask Bev to show you the books", to: "the_books" },
+        { text: "Find out where Ron gets his money", to: "the_books" },
       ],
     },
 
     the_books: {
       title: "Follow the Money",
-      revised: 1,
+      revised: 2,
       text: [
-        "Bev logs you into the accounting software and goes to make coffee.",
-        "It takes you twenty minutes to find it, because whoever did it is very stupid.",
+        "Something’s been bugging you. Ron blew every cent the Lunds had back in 2019, on RonCoin and a vape for dogs. Ron doesn’t have a job. Ron has never had a job. Bev’s been paying for everything since with stapler porn. So where the hell does Ron get his money?",
+        "Because if Ron ever comes after Bev for half, it would be real nice to have something on Ron first.",
+        "Bev logs you into the accounting software, pours herself a coffee and goes back to her stapler.",
+        "It takes you twenty minutes to find the answer, because whoever’s been hiding it is very stupid.",
         "Every month for three years, money has left Brightline’s main account and gone to something called R.L. Ventures LLC. Five thousand here. Twelve thousand there. Once, on Valentine’s Day, twenty-two thousand dollars. The memo lines say things like <em>consulting</em> and <em>visionary services</em> and, once, just <em>ron</em>.",
         "Total: three hundred and forty thousand dollars.",
         "R.L. Ventures LLC is registered to the Lunds’ house in Lakeshore Estates. Ron isn’t just a deadbeat. Ron has been stealing from the company that Bev has been keeping alive with dirty pictures of a stapler.",
-        "Where all that money went after that, you can’t see. Ron spent it on something. Ron spends everything on something.",
+        "Where the money went from there, you can’t see. Ron spent it on something. Ron spends everything on something.",
       ],
       choices: [
         { text: "Tell Bev right now", to: "tell_bev_now" },
