@@ -1114,14 +1114,14 @@ const STORY = {
 
     bev_ron: {
       title: "Thirty-One Years",
-      revised: 1,
+      revised: 2,
       text: [
         "Bev unwraps a butterscotch and tells you about Ron.",
-        "Thirty-one years. Ron has never held a job. Ron calls himself Chief Visionary Officer because she wouldn’t let him be Chief Executive. Ron put their savings into RonCoin, and RonCoin is now worth less than the paper it isn’t printed on. Ron has a podcast. Ron has a bookie named Sal, who sends them a fruit basket every Christmas out of gratitude.",
-        "“And no prenup,” Bev says. “I was young, and he had a Camaro. If I divorce him, Ronald gets half of everything. Half of Brightline. Half of Bound & Filed. Half of Lady Lamina, my laminator.” She says it the way a mother talks about a sleeping child. “Over my dead body.”",
-        "“I’ve hated that man since the Clinton administration, hon,” she says sweetly. “Every morning I make him eggs, and I think about the eggs being poisoned. I never do it. But I think about it. It gets me through.”",
-        "For the first time, you really, truly like Bev.",
-        "She checks her watch. “Come on, hon. I’ve got a shoot to finish.”",
+        "Thirty-one goddamn years. Ron has never held a job. Not one. Ron calls himself Chief Visionary Officer because she wouldn’t let him be Chief Executive. Ron put their savings into RonCoin, and RonCoin is now worth less than the paper it isn’t printed on. Ron has a podcast. Nobody listens to the fucking podcast. Ron has a bookie named Sal, who sends them a fruit basket every Christmas out of gratitude.",
+        "“And no prenup,” Bev says. “I was young and dumb as shit, and he had a Camaro. If I divorce that son of a bitch, Ronald gets half of everything. Half of Brightline. Half of Bound & Filed. Half of Lady Lamina, my laminator.” She says it the way a mother talks about a sleeping child. “Over my dead fucking body.”",
+        "“I’ve hated that man since the Clinton administration, hon,” she says sweetly. “Every morning I make that lazy prick his eggs, and I think about the eggs being poisoned. I never do it. But I think about it. It gets me through.”",
+        "For the first time, you really, truly like Bev. Holy shit, Bev.",
+        "She checks her watch. “Come on, hon. I’ve got a shoot to finish, and that stapler isn’t going to fuck itself.”",
       ],
       choices: [
         { text: "Offer to dig into the company’s books", to: "the_books" },
