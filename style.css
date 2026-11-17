@@ -342,6 +342,97 @@ body {
   color: var(--muted);
 }
 
+/* The scenes and choices that got you here, to copy and paste. */
+.your-path {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-ui);
+}
+
+.path-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+#path-heading {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+#copy-path {
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.375rem;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+#copy-path:hover,
+#copy-path:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+#path-list {
+  margin: 0;
+  padding-left: 1.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+#path-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+#path-list li::marker {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.path-scene {
+  display: block;
+  font-weight: 600;
+}
+
+.path-choice {
+  display: block;
+  color: var(--muted);
+}
+
+.path-choice::before {
+  content: "→ ";
+  color: var(--accent);
+}
+
+#path-list li.here .path-scene {
+  color: var(--accent);
+}
+
+#path-list li.here .path-scene::after {
+  content: " · you are here";
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.path-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;

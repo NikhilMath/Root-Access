@@ -9,6 +9,8 @@
   const choicesEl = document.getElementById("choices");
   const restartBtn = document.getElementById("restart");
   const forgetBtn = document.getElementById("forget");
+  const pathList = document.getElementById("path-list");
+  const copyPathBtn = document.getElementById("copy-path");
   const mapSvg = document.getElementById("map-svg");
   const mapScroll = mapSvg.parentElement;
   const mapBox = mapScroll.parentElement;
@@ -62,6 +64,69 @@
   function previousId(id) {
     if (path.length >= 2) return path[path.length - 2];
     return Object.keys(STORY.passages).find((from) => (STORY.passages[from].choices || []).some((c) => c.to === id));
+  }
+
+  // The path as steps: each scene on it, and the choice taken to leave it.
+  function pathSteps() {
+    return path.map((id, i) => {
+      const passage = STORY.passages[id];
+      const next = path[i + 1];
+      const choice = next && (passage?.choices || []).find((c) => c.to === next);
+      return { id, title: passage?.title || id, choice: choice ? choice.text : null };
+    });
+  }
+
+  // The path at the bottom of the page: scene titles, with the choice taken
+  // under each one.
+  function showPath() {
+    pathList.replaceChildren(...pathSteps().map((step, i) => {
+      const li = document.createElement("li");
+      if (i === path.length - 1) li.className = "here";
+      const title = document.createElement("span");
+      title.className = "path-scene";
+      title.textContent = step.title;
+      li.append(title);
+      if (step.choice) {
+        const choice = document.createElement("span");
+        choice.className = "path-choice";
+        choice.textContent = step.choice;
+        li.append(choice);
+      }
+      return li;
+    }));
+  }
+
+  // The copied version names each scene's id too, so it can be found in
+  // story.js.
+  function pathText() {
+    const steps = pathSteps();
+    const lines = [`Root Access path (${steps.length} ${steps.length === 1 ? "scene" : "scenes"})`];
+    steps.forEach((step, i) => {
+      lines.push(`${i + 1}. ${step.title} [${step.id}]${i === steps.length - 1 ? " ← here" : ""}`);
+      if (step.choice) lines.push(`   → ${step.choice}`);
+    });
+    return lines.join("\n");
+  }
+
+  async function copyPath() {
+    const text = pathText();
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      // Older browsers and some embedded views: copy from a hidden text box.
+      const box = document.createElement("textarea");
+      box.value = text;
+      box.setAttribute("readonly", "");
+      box.style.position = "fixed";
+      box.style.opacity = "0";
+      document.body.append(box);
+      box.select();
+      document.execCommand("copy");
+      box.remove();
+    }
+    copyPathBtn.textContent = "Copied";
+    clearTimeout(copyPath.timer);
+    copyPath.timer = setTimeout(() => (copyPathBtn.textContent = "Copy path"), 2000);
   }
 
   function backLink(to) {
@@ -187,6 +252,7 @@
     saveTrail();
 
     showPassage(id, passage);
+    showPath();
     const { deadEnds } = drawStoryMap(mapSvg, STORY, id, trail);
     const over = deadEnds > STORY.maxEndings;
     deadEndCount.textContent = `Dead ends: ${deadEnds} of ${STORY.maxEndings}${over ? " (too many)" : ""}`;
@@ -217,6 +283,7 @@
 
   // Start over keeps everything you've found, so the map still shows it.
   restartBtn.addEventListener("click", goToStart);
+  copyPathBtn.addEventListener("click", copyPath);
 
   forgetBtn.addEventListener("click", () => {
     if (!confirm("Forget every scene and ending you’ve found? This can’t be undone.")) return;
