@@ -101,16 +101,17 @@ const STORY = {
 
     group_text: {
       title: "Sent 3:14 a.m.",
-      revised: 1,
+      revised: 2,
       text: [
         "You type: <em>I know what you’re doing in Conference Room B, you sweaty little goblin. I’m coming for you.</em>",
         "You hit send. For four glorious seconds, you feel like an action hero. Then you look at the top of the thread.",
         "<em>Brightline All Staff (43)</em>.",
         "Read by 1. Read by 4. Read by 9. Who the fuck is awake?",
-        "The first reply is from Bev Lund, the CEO and founder, a sixty-eight-year-old woman who bakes lemon bars every Friday and calls everyone “hon”: a little red heart, and <em>Get some sleep, hon!</em>",
+        "The first reply is from Bev Lund, the CEO and founder, a sixty-eight-year-old woman who brings in lemon bars every single day and calls everyone “hon”: a little red heart, and <em>Get some sleep, hon!</em>",
         "Then Gloria from the front desk: <em>!!!!!!</em>",
         "Then Kevin, the other half of the IT department: <em>bro</em>",
-        "Then, finally, Brent: <em>My office. 9 a.m.</em>",
+        "Then, finally, Brent: <em>Who is this</em>",
+        "He’s been your boss for six years. He doesn’t have your number.",
       ],
       choices: [
         { text: "Throw your phone in the hamper and try to sleep", to: "insomnia" },
@@ -136,12 +137,12 @@ const STORY = {
 
     doorbell: {
       title: "Ding-Dong",
-      revised: 1,
+      revised: 2,
       text: [
         "The door opens on a man about seventy, tan as a catcher’s mitt, in a silk robe that is doing absolutely nothing. You look at the ceiling. The ceiling is safer.",
         "“You the food?” the man asks.",
         "“I’m from IT. At Brightline Solutions.”",
-        "The man lights up. “Ron Lund! Chief Visionary Officer!” He pumps your hand. Ron Lund. As in Bev Lund, the CEO of Brightline, a sweet sixty-eight-year-old woman who bakes lemon bars every Friday and calls everybody “hon.” This is her house. She is married to <em>this</em>.",
+        "The man lights up. “Ron Lund! Chief Visionary Officer!” He pumps your hand. Ron Lund. As in Bev Lund, the CEO of Brightline, a sweet sixty-eight-year-old woman who bakes lemon bars for the whole office and calls everybody “hon.” This is her house. She is married to <em>this</em>.",
         "“IT! Perfect!” Ron says. “I’ve been trying to get into the work computer all night. That woman is hiding money on there, I can smell it. Come in, come in. You drink scotch?”",
         "From upstairs: “RONALD, IF THAT’S ANOTHER BOOKIE, I SWEAR TO GOD.”",
         "“It’s not a bookie, Bev!” Ron yells. Then, quietly, to you: “She’s a lot.”",
@@ -253,7 +254,7 @@ const STORY = {
 
     confb_night: {
       title: "Conference Room B",
-      revised: 1,
+      revised: 2,
       text: [
         "Conference Room B is empty. But it’s warm. Somebody was just here, and left in a hurry.",
         "There’s a ring light on a tripod, still on, set to pink. Three empty energy drinks. A smear of glitter on the whiteboard, under the words <em>SET LIST</em>, and then: <em>1. Teams Ringtone (Extended Mix). 2. Printer Jam (Synergy Edit). 3. Reply All (Club Version).</em>",
@@ -263,7 +264,7 @@ const STORY = {
       ],
       choices: [
         { text: "Hide under the conference table", to: "under_table" },
-        { text: "Grab the set list and get out", to: "waffle" },
+        { text: "Snap a photo of the set list and get out", to: "waffle" },
       ],
     },
 
@@ -320,10 +321,10 @@ const STORY = {
 
     late: {
       title: "9:41 a.m.",
-      revised: 1,
+      revised: 2,
       text: [
         "You’re forty minutes late, and you walk straight into the monthly all-hands in Conference Room A, because of course you do.",
-        "Forty-three heads turn. At the front of the room is Bev Lund, CEO and founder, sixty-eight, in a cardigan with little cats on it. Bev bakes lemon bars every Friday. Bev calls everyone “hon.” Bev is the only reason anyone stays.",
+        "Forty-three heads turn. In the back row, Kevin, twenty-three, the other half of the IT department, gives you a slow nod, like you meant to do that. At the front of the room is Bev Lund, CEO and founder, sixty-eight, in a cardigan with little cats on it. Bev bakes lemon bars every day of her life. Bev calls everyone “hon.” Bev is the only reason anyone stays.",
         "“And we lost money again this quarter,” she’s saying, “but don’t you worry about payroll, hons. Payroll’s covered. Payroll’s always covered.”",
         "Nobody asks how. Nobody ever asks how.",
         "In the front row, a tan old man in golf clothes is asleep with his mouth open. That’s Ron Lund, Bev’s husband, “Chief Visionary Officer.” Nobody knows what he does. Bev doesn’t look at him once.",
@@ -332,16 +333,16 @@ const STORY = {
       ],
       choices: [
         { text: "Sit next to the vendor", to: "tasha_meet" },
-        { text: "Sit next to Ron and find out what his deal is", to: "ron_meet" },
+        { text: "Catch Ron after the meeting and find out what his deal is", to: "ron_meet" },
       ],
     },
 
     gloria: {
       title: "Front Desk",
-      revised: 2,
+      revised: 3,
       text: [
         "Gloria lowers her voice, which for Gloria means the second floor can still hear it.",
-        "She tells you that Brent’s been coming in “at all hours” since his divorce. That Kevin vapes in the stairwell. That Bev just bought a brand-new Lexus, “cash, hon, cash,” even though the company hasn’t had a good year since 2019.",
+        "She tells you that Brent’s been coming in “at all hours” since his divorce. That Kevin, the other half of your two-person IT department, vapes in the stairwell. That Bev just bought a brand-new Lexus, “cash, hon, cash,” even though the company hasn’t had a good year since 2019.",
         "“And Ron,” she says. Ron Lund, Bev’s husband, a tan old man whose title is Chief Visionary Officer and whose job is golf. “Ron’s been asking everybody for the server password. Even me. I told him it was ‘password.’”",
         "“Is it?” you ask.",
         "Gloria gives you a look. “Honey, I don’t even know what a server is.”",
@@ -423,23 +424,23 @@ const STORY = {
 
     kevin_theory: {
       title: "Kevin Has Theories",
-      revised: 1,
+      revised: 2,
       text: [
         "Kevin has theories. Kevin has so many theories.",
         "It’s Russian hackers. It’s Chinese hackers. It’s a guy he used to play video games with in high school who “never got over it.” It’s aliens, “but, like, chill aliens.”",
         "Then he says, “Or it’s Bev.”",
         "You laugh. Bev Lund, the CEO. Bev of the lemon bars.",
-        "“No, bro, for real. I’ve got the security cameras on my phone.” He shows you a clip. 2:38 a.m., last Thursday. Bev, in her cardigan, coming in the back door with a young guy. A hot young guy. They go into the supply closet. “And they don’t come out for like an hour,” Kevin says. He raises his eyebrows so high his beanie moves. “Get it, Bev.”",
+        "“No, bro, for real. I’ve got the security cameras on my phone. Like two-thirty in the morning, Bev comes in the back door with a guy. A hot young guy. They go in the supply closet, and they don’t come out for like an hour.” He raises his eyebrows so high his beanie moves. “Get it, Bev.”",
       ],
       choices: [
-        { text: "Pull up the rest of the security footage", to: "footage" },
+        { text: "Pull up the security footage", to: "footage" },
         { text: "Go find Bev’s husband and see what he knows", to: "ron_meet" },
       ],
     },
 
     footage: {
       title: "Security Footage",
-      revised: 1,
+      revised: 2,
       text: [
         "You pull up the last week of security footage on the big monitor in the IT closet. Kevin, twenty-three, the other half of the IT department, brings popcorn from somewhere. Kevin always has popcorn from somewhere.",
         "Last Thursday, 2:38 a.m.: Bev Lund, CEO, cardigan, comes in the back door. With her is a young guy, maybe twenty-five, with cheekbones you could open mail with, carrying a big black duffel bag. They go into the supply closet. The door shuts.",
@@ -450,7 +451,7 @@ const STORY = {
       ],
       choices: [
         { text: "Rewind further", to: "footage2" },
-        { text: "Close the laptop. You saw nothing.", to: "lunch" },
+        { text: "Turn off the monitor. You saw nothing.", to: "lunch" },
       ],
     },
 
@@ -606,11 +607,11 @@ const STORY = {
 
     ron_mole: {
       title: "Very Hacker",
-      revised: 1,
+      revised: 2,
       text: [
         "Ron checks that the coast is clear. There’s nobody in the break room but a ficus.",
         "“xXr00tXx,” he whispers. “With zeroes. My grandson set it up. I log in from home at night, looking for where she hides the money. Can’t find shit. The computer just says ‘access denied,’ and then I get mad, and then Bev throws a shoe at me.”",
-        "You know that name. It’s all over the server logs: a mystery admin account poking around every night. You figured it was a hacker. It’s a seventy-year-old man in a bathrobe who thinks zeroes make you dangerous.",
+        "You know that name. It’s all over the server logs: a mystery admin account poking around every night, getting nowhere. Now it has a face, and the face belongs to a seventy-year-old man in a bathrobe who thinks zeroes make you dangerous.",
         "“So we’re partners,” Ron says. “You’re my mole. My eyes on the inside.” He tries to do a secret handshake. It goes on too long and ends with Ron doing finger guns.",
         "One mystery down. And it wasn’t even the one that’s killing the server.",
       ],
@@ -622,10 +623,10 @@ const STORY = {
 
     lunch: {
       title: "Lemon Bars",
-      revised: 1,
+      revised: 2,
       text: [
         "At 12:15, the whole company crams into the break room for December birthdays. Bev brought lemon bars. Bev always brings lemon bars.",
-        "Everyone’s here. Bev Lund, the CEO, in a cardigan with reindeer on it, cutting squares. Her husband, Ron, the so-called Chief Visionary Officer, eating the squares as fast as she cuts them. Brent Koslowski, VP of Operations and your boss, in the corner, eating salad out of the container and checking his watch. Kevin, the other half of IT, vaping into his hoodie. Gloria from the front desk, telling everyone what she knows, which is everything.",
+        "Everyone’s here. Bev Lund, the CEO, in her cardigan with the little cats on it, cutting squares. Her husband, Ron, the so-called Chief Visionary Officer, eating the squares as fast as she cuts them. Brent Koslowski, VP of Operations and your boss, in the corner, eating salad out of the container and checking his watch. Kevin, the other half of IT, vaping into his hoodie. Gloria from the front desk, telling everyone what she knows, which is everything.",
         "And Tasha Reyes, the vendor from CoreSwitch Networks, who is in town all week to sell Bev a new server, and who just winked at you over a paper plate. You have not been winked at since 2014.",
         "“Holiday party’s Friday!” Bev announces. “Open bar!” Everyone cheers. Ron says, “Who’s paying for that?” and Bev says, “Not you, Ronald,” and the room goes very quiet.",
         "You eat a lemon bar and make a decision. Tonight, you’re going to be in this building at 3:00 a.m. when the server dies. You’re going to watch it happen. You’re going to find out who did it.",
@@ -875,12 +876,12 @@ const STORY = {
 
     crash_anyway: {
       title: "3:00 a.m.",
-      revised: 2,
+      revised: 3,
       text: [
-        "At 2:59, you’re standing in the doorway of Conference Room B, smug as hell, watching the clock on your phone like someone at a New Year’s Eve party who’s about to get the best kiss of their life.",
+        "At 2:59, you’re standing at the door of Conference Room B, smug as hell, watching the clock on your phone like someone at a New Year’s Eve party who’s about to get the best kiss of their life.",
         "3:00.",
         "Your phone buzzes. Server alert. The server is down.",
-        "In the conference room, Brent, who has decided the show must go on, is still dancing. His stream never stuttered. Eleven viewers, all still there. All those hundreds of gigabytes of Brent weren’t killing anything. They were just sad.",
+        "In the conference room, Brent is still dancing, because the show must go on. His stream never stuttered. Eleven viewers, all still there. All those hundreds of gigabytes of Brent weren’t killing anything. They were just sad.",
         "It wasn’t Brent.",
         "Your triumph goes down like a bouncy castle at the end of a kid’s party. Then, from somewhere down the hall, you hear a sound. A low mechanical purr. Like a machine warming up.",
         "And a woman’s voice, very soft: “That’s it, baby. Get nice and hot for me.”",
@@ -893,7 +894,7 @@ const STORY = {
 
     server_check: {
       title: "Bound & Filed",
-      revised: 1,
+      revised: 2,
       text: [
         "In the server room, every fan is at max. The traffic graph is a wall: at exactly 3:00, forty-one thousand connections from forty countries, all hitting the same hidden folder on Brightline’s server. A folder you didn’t make. A folder called <em>/bnf</em>.",
         "You open it. It’s a website.",
@@ -902,7 +903,7 @@ const STORY = {
         "Below that, a hole punch in fishnets, shot from below. A tape dispenser, glistening. A label maker that has printed, in tiny letters, a word you are not going to say out loud.",
         "Forty-one thousand subscribers, worldwide, at $14.99 a month.",
         "“What,” you say, “the fuck.”",
-        "Somewhere down the hall, a machine starts to purr.",
+        "Somewhere down the hall, something is purring.",
       ],
       choices: [
         { text: "Read the captions", to: "read_captions" },
@@ -912,7 +913,7 @@ const STORY = {
 
     read_captions: {
       title: "A Firm, Satisfying Staple",
-      revised: 1,
+      revised: 2,
       text: [
         "You read the captions. You shouldn’t. You do.",
         "<em>Big Stan never misses. One firm, satisfying staple, and you’re bound for good.</em>",
@@ -920,7 +921,7 @@ const STORY = {
         "<em>Lady Lamina’s been warming up for an hour. She’s hot, she’s ready, and she takes it all. Both sides.</em>",
         "There are comments. Thousands of them. In German, in Japanese, in Portuguese. The top commenter, with a gold badge that says <em>#1 Fan</em>, is someone called <em>StapleDaddy</em>, who has written <em>LORD HAVE MERCY</em> under every single post since 2020.",
         "You feel horrified, aroused and confused, all at once, in a ratio you can’t pin down. Your pills are doing their absolute best.",
-        "Down the hall, something starts to purr.",
+        "Down the hall, the purring gets louder.",
       ],
       choices: [
         { text: "Follow the purring", to: "supply_closet" },
@@ -930,11 +931,11 @@ const STORY = {
 
     double_dose: {
       title: "Double Dose",
-      revised: 1,
+      revised: 2,
       text: [
         "The second pill kicks in at 11:40 p.m., in the back of a cab, because you’re high on prescription medication, not stupid.",
         "At first it’s nice. The streetlights have little halos. The cab driver has a beautiful voice. The cab driver is singing. The cab driver, you realize, is not singing. The cab driver is asking for eleven dollars.",
-        "By the time you get to the office, the carpet is breathing. Earl, the night guard, is asleep under a crossword, and the crossword is whispering the answers.",
+        "You get to the office a little after midnight and spend an hour in the parking lot, watching a cloud. When you finally go in, the carpet is breathing. Earl, the night guard, is asleep under a crossword, and the crossword is whispering the answers.",
         "Upstairs, there’s pink light pulsing under the door of Conference Room B, and a bass line that you can see.",
         "And from the server room, very softly, someone is calling your name.",
       ],
@@ -994,12 +995,12 @@ const STORY = {
 
     trip_three: {
       title: "Three O’Clock",
-      revised: 1,
+      revised: 2,
       text: [
         "3:00 a.m. You feel it in your teeth.",
         "You’re in the server room. You don’t remember getting there. Every light in the building flickers. The server screams, one long high note, like a woman in an opera finding out about her husband. Then she goes dark.",
         "“No,” you whisper. “No, no, no, baby, stay with me.”",
-        "The fax machine finishes printing. One page. One word: <em>SUPPLY CLOSET.</em>",
+        "The old fax machine in the corner spits out one page. One word: <em>SUPPLY CLOSET.</em>",
         "From down the hall, something purrs. Something warm. Something mechanical. And a woman’s voice, very soft: “That’s it, baby. Get nice and hot for me.”",
         "You’re pretty sure you’re hallucinating the voice. You’re wrong. It’s the only thing you aren’t hallucinating all night.",
       ],
@@ -1076,13 +1077,13 @@ const STORY = {
 
     bev_car: {
       title: "Passenger Seat",
-      revised: 1,
+      revised: 2,
       text: [
         "Bev settles into the passenger seat of your Corolla in the dark parking lot, moves a fast-food bag out of the way and folds her hands in her lap like she’s at church.",
         "“In 2019,” she says, “Brightline was dead. My husband, Ronald, had drained every account we had into his little ventures. RonCoin. A vape for dogs. A timeshare in a hurricane. I was eight weeks from laying off forty-three people.”",
         "“Then one night I was here alone, sad and a little drunk, and I took a picture of a stapler. Real sexy-like. As a joke. I put it on the internet with a dirty caption.” She smiles. “Turns out a lot of people like office supplies, hon. A <em>lot</em> of people.”",
-        "Her website is called Bound & Filed. It has forty-one thousand subscribers at $14.99 a month. It pays every salary at Brightline. It pays the rent. It paid for the Lexus. Every night at 3:00 a.m., the Daily Staple drops, forty-one thousand people hit refresh at once, and the server dies happy.",
-        "“The young man is Luis,” she says. “My photographer. Film student. Gay as a parade float. Not my lover, hon. My lighting guy.”",
+        "Her website is called Bound & Filed. It has forty-one thousand subscribers at $14.99 a month. It pays every salary at Brightline. It pays the rent. It paid for her new Lexus. Every night at 3:00 a.m., the Daily Staple drops, forty-one thousand people hit refresh at once, and the server dies happy.",
+        "“And the young man who comes in with me at night,” she says, “is Luis. My photographer. Film student. Gay as a parade float. Not my lover, hon. My lighting guy.”",
         "“Does Ron know?” you ask.",
         "Bev’s smile goes away. “If Ronald knew, Ronald would take half. Nobody can know, hon. <em>Especially</em> not him.”",
       ],
@@ -1094,12 +1095,12 @@ const STORY = {
 
     bev_explains: {
       title: "Sit Down, Hon",
-      revised: 1,
+      revised: 2,
       text: [
         "Bev sits you down on a box of copy paper in the supply closet, which is apparently a photo studio now, hands you a lemon bar and tells you everything.",
         "In 2019, Brightline was dead. Her husband, Ron, had drained every account into his ventures: RonCoin, a vape for dogs, a timeshare in a hurricane zone. She was eight weeks from laying off forty-three people.",
         "“Then one night I was here alone, a little drunk on boxed wine, and I took a picture of a stapler. Real sexy-like. As a joke. I put it online with a dirty caption.” She shrugs. “Hon, it turns out there are a whole lot of people who are into office supplies.”",
-        "Her website is called Bound & Filed. It has forty-one thousand subscribers worldwide at $14.99 a month. It pays every salary at Brightline, the rent, the health insurance, the Lexus. Every night at 3:00 a.m., the Daily Staple drops, forty-one thousand people hit refresh at once, and the server dies happy.",
+        "Her website is called Bound & Filed. It has forty-one thousand subscribers worldwide at $14.99 a month. It pays every salary at Brightline, the rent, the health insurance, her new Lexus. Every night at 3:00 a.m., the Daily Staple drops, forty-one thousand people hit refresh at once, and the server dies happy.",
         "A young guy with cheekbones you could open mail with gives you a little wave. “Luis,” Bev says. “My photographer. Film student. Gay as a parade float. Not my lover, hon. My lighting guy.”",
         "“Does Ron know?”",
         "Bev’s smile vanishes. “If Ronald knew, Ronald would take half. Nobody can know. <em>Especially</em> not him.”",
@@ -1181,9 +1182,9 @@ const STORY = {
 
     call_tasha: {
       title: "Vendor Relations",
-      revised: 1,
+      revised: 2,
       text: [
-        "Tasha Reyes, the vendor from CoreSwitch Networks who’s been in town all week trying to sell Brightline a new server, picks up on the second ring at 4:40 a.m.",
+        "Tasha Reyes, the vendor from CoreSwitch Networks who’s in town all week trying to sell Brightline a new server, picks up on the second ring at 4:40 a.m.",
         "“IT,” she says, sleepy. “You better be calling about my rack.”",
         "You explain. Not everything. Enough. A big secret client. A traffic spike every night at three. No signature from the husband.",
         "“Say ‘redundant failover’ again,” Tasha says.",
@@ -1199,7 +1200,7 @@ const STORY = {
 
     kevin_help: {
       title: "Bro",
-      revised: 2,
+      revised: 3,
       text: [
         "Kevin, the other half of the IT department, arrives at 5:15 a.m. in pajama pants and a beanie, holding an energy drink in each hand like a gunslinger.",
         "You show him Bound & Filed. You brace yourself.",
@@ -1207,7 +1208,7 @@ const STORY = {
         "“That’s it?”",
         "“Bro, I’ve been on the internet since I was six. This is the most wholesome thing I’ve seen all year.” He cracks his knuckles. “Also, we should put it on the blockchain.”",
         "“We’re not putting it on the blockchain, Kevin.”",
-        "You spend an hour copying Bound & Filed onto a cheap cloud host Kevin uses for his crypto stuff. It isn’t a fix. It’s a bandage. Friday at 3:00 a.m., you’ll find out if it holds.",
+        "You spend an hour copying Bound & Filed onto a cheap cloud host Kevin uses for his crypto stuff. It isn’t a fix. It’s a bandage on a four-dollar hosting plan, and at three tomorrow morning, forty-one thousand people are going to rip it right off.",
       ],
       choices: [
         { text: "Go home and sleep", to: "thursday" },
@@ -1268,13 +1269,13 @@ const STORY = {
 
     lawyer: {
       title: "Gail",
-      revised: 1,
+      revised: 2,
       text: [
         "Bev’s divorce lawyer is named Gail. Bev has had Gail’s number on speed dial since 1994. She has never once called it.",
         "Gail picks up on the first ring. “Bev. Is it time?”",
         "“It’s time, Gail.”",
         "“Oh, thank God.” You hear Gail stand up. You hear Gail, possibly, do a little dance. “Talk to me.”",
-        "Bev talks. Gail listens. Gail says a lot of legal words, and also, “Oh, he is so fucked.” Gail says that if Ron has been stealing from the company, a judge is going to have some opinions about who gets half of what.",
+        "Bev talks. Gail listens. Gail says a lot of legal words, and also, “Oh, he is so fucked.” Gail asks if Ron has ever had his hand in the company till. Men like Ron usually do, she says, and if he has, a judge is going to have some opinions about who gets half of what.",
         "“Get me proof,” Gail says. “Paper. Anything. And for God’s sake, Bev, don’t poison him. I know you’ve thought about it.”",
         "“Every morning, Gail.”",
         "“I know, hon.”",
@@ -1289,14 +1290,14 @@ const STORY = {
 
     thursday: {
       title: "Thursday",
-      revised: 1,
+      revised: 2,
       text: [
-        "Thursday at Brightline is weird, because now you know.",
+        "You sleep through most of Wednesday. Thursday at Brightline is weird, because now you know.",
         "Every time Bev walks by, you think <em>Lady Lamina</em>. Every time somebody staples something, you blush. Gloria at the front desk staples an envelope, and you have to go sit in your car.",
         "Bev, for her part, is the same as ever. Sweet. Lemon bars. “Morning, hon!” If anything, she seems lighter. She winks at you once in the hallway, and it is the scariest wink of your life.",
         "Ron Lund, Bev’s husband, follows you to the bathroom twice. He doesn’t come in. He just waits outside the door, and when you come out, he stares.",
         "And everybody’s talking about tomorrow. The holiday party. Open bar.",
-        "You haven’t really slept in two days. You feel amazing. You feel terrible. You feel like a soldier about to go to war, or possibly someone about to have a heart attack.",
+        "Your body has no idea what day it is. You feel amazing. You feel terrible. You feel like a soldier about to go to war, or possibly someone about to have a heart attack.",
       ],
       choices: [
         { text: "Check out the van that’s been parked outside all day", to: "pi" },
@@ -1340,15 +1341,15 @@ const STORY = {
 
     brent_music: {
       title: "Fast as Fuck",
-      revised: 2,
+      revised: 3,
       text: [
         "Brent Koslowski, VP of Operations, is in Conference Room B with the door locked and the blinds down at 2 p.m. on a Thursday, which is new.",
         "When you knock, Brent opens the door two inches. He has glitter on his face.",
         "“The party,” Brent says. “Bev asked me to handle the music. I said I’d get a guy. I am the guy.” He swallows. “Make sure the network in the big conference room is fast as fuck tomorrow night. Fast. As. Fuck.”",
         "“Is that an order?”",
         "Brent looks at you for a long time. Something passes over his face. Fear, maybe. Or hope. “It’s a request,” he says. “Please.”",
-        "Brent has never said please to you before. It does something to you. Not a sex thing. A human thing. Those are new too.",
-        "He starts to shut the door, then stops. “And bring a plus-one. Everybody’s bringing a plus-one. I need bodies on that dance floor.” He narrows his eyes. “What about that vendor? Tasha. Gloria says she keeps asking about you.”",
+        "Brent Koslowski, asking nicely. It does something to you. Not a sex thing. A human thing. Those are new too.",
+        "He starts to shut the door, then stops. “And bring a plus-one. Everybody’s bringing a plus-one. I need bodies on that dance floor.” He narrows his eyes. “What about that vendor? Tasha. Gloria from the front desk says she keeps asking about you.”",
         "You think about Tasha a normal amount, which is constantly.",
       ],
       choices: [
@@ -1449,14 +1450,14 @@ const STORY = {
 
     pam: {
       title: "HR",
-      revised: 1,
+      revised: 2,
       text: [
         "Pam from HR is at the bar, alone, on her fourth white wine, in a sweater with a snowman on it.",
         "Pam is the most terrifying person at Brightline. Pam has a binder for everything. Pam once sent an email titled <em>Re: Re: Re: Appropriate Use of the Fridge</em> that was nine pages long.",
         "“You,” she says. “Sit. Can I tell you something?”",
         "She leans in. She smells like wine and a very specific kind of loneliness.",
         "“I have a subscription,” Pam whispers. “To a website. With office supplies. Very tasteful.” She takes a long sip. “There’s a stapler on there. Big Stan. He changed my life.”",
-        "You choke on your ginger ale.",
+        "You choke on your drink.",
         "“Don’t tell anyone,” Pam says. “It’s just, Big Stan doesn’t judge. Big Stan doesn’t have a binder. Big Stan just... binds.”",
         "Somewhere deep in your brain, a tiny Bev Lund laughs and laughs.",
       ],
@@ -1468,25 +1469,25 @@ const STORY = {
 
     conga: {
       title: "The Conga Line",
-      revised: 2,
+      revised: 3,
       text: [
         "Somebody starts a conga line, and within a minute it’s thirty people long and going everywhere.",
         "Through the kitchen. Through accounting. Briefly through the men’s room, with apologies. Bev is in it, her light-up Rudolph sweater blinking. Kevin is in it. The seventy-four-year-old guy from payroll is leading it, shirtless, and he has a tattoo of a woman riding a dolphin, and nobody has ever been more surprised by anything.",
         "Then the conga line turns into the server room.",
         "You scream, “NOT THE SERVER ROOM.” Nobody listens. Nobody ever listens to IT.",
-        "Thirty drunk people conga around the rack. Somebody’s hip hits a power strip. Somebody’s elbow hits the big red button on the wall that says <em>EMERGENCY. DO NOT PRESS.</em>",
+        "Thirty drunk people conga around the rack. Somebody’s hip hits a power strip. And the guy from payroll, at the head of the line, reaches for the big red button on the wall, the one that says <em>EMERGENCY. DO NOT PRESS.</em> He’s seventy-four. Nobody tells him what to do anymore.",
       ],
       choices: [
         { text: "Dive for the server", to: "fire_alarm" },
-        { text: "Get the fuck out of the server room", to: "earl_rosa" },
+        { text: "Grab his wrist and lead the conga line the fuck out of there", to: "earl_rosa" },
       ],
     },
 
     fire_alarm: {
       title: "Sprinklers",
-      revised: 1,
+      revised: 2,
       text: [
-        "The fire alarm goes off. Then the sprinklers.",
+        "He presses it. The fire alarm goes off. Then the sprinklers.",
         "Forty-three employees and their plus-ones scream, and then keep dancing. It’s the best thing that has ever happened at Brightline. Somebody cranks the music up. The punch bowl fills with water and stays purple.",
         "You throw your body over the server like a parent shielding a baby from a hailstorm. You’re soaked. The server is under your chest, warm and humming and still alive.",
         "“I got you,” you whisper. “I got you, buddy.”",
@@ -1518,7 +1519,7 @@ const STORY = {
 
     supply_hookup: {
       title: "Do Not Disturb",
-      revised: 1,
+      revised: 2,
       text: [
         "The supply closet is still a photo studio. Tasha takes one look at the red satin and the softbox lights and the fog machine and says, “Oh, you <em>freak</em>,” and you decide not to correct her.",
         "It goes great. It goes very great. Then Tasha leans back on the table and bumps the power button on Lady Lamina, Bev’s laminator, who starts warming up with a low, eager purr.",
@@ -1528,7 +1529,7 @@ const STORY = {
         "When you come out twenty minutes later, flushed and buttoned wrong, the hallway is empty except for Luis, Bev’s photographer, who looks at you both, looks at the closet and says, “Did you <em>use my lights</em>?”",
       ],
       choices: [
-        { text: "Go check what’s happening in Bev’s office", to: "earl_rosa" },
+        { text: "Find somewhere quiet to cool off", to: "earl_rosa" },
         { text: "Follow the sound of somebody tapping a mic", to: "ron_speech" },
       ],
     },
@@ -1631,12 +1632,12 @@ const STORY = {
 
     stapledaddy: {
       title: "StapleDaddy",
-      revised: 1,
+      revised: 2,
       text: [
         "You open it. A gold banner loads across the top:",
         "<em>Welcome back, StapleDaddy! Our #1 Fan Since 2020!</em>",
         "StapleDaddy. The site’s top commenter, the man who has written LORD HAVE MERCY under every single Daily Staple for three years straight. It’s Ron. It has been Ron the whole time.",
-        "You open the billing page. Lifetime spend: <em>$341,206.18</em>. Premium tier. Custom requests. Tips. So many tips. And the card on file isn’t Ron’s card. It’s a company card for something called R.L. Ventures LLC, and the bill goes to Brightline Solutions.",
+        "You open the billing page. Lifetime spend: <em>$341,206.18</em>. Premium tier. Custom requests. Tips. So many tips. And the card on file isn’t Ron’s card. It’s a company card for R.L. Ventures LLC, as in Ron Lund, and the bill goes to Brightline Solutions.",
         "You sit down on the floor.",
         "Ron has been stealing from Brightline for three years. And he has spent every stolen cent on his own wife’s stapler porn. Every dollar Ron took out of the company went straight back into the company, plus tips. Every night at 3:00 a.m., when forty-one thousand people hit refresh and the server dies, one of them is Ron.",
         "You have never wanted to show anyone anything more in your entire life.",
@@ -1649,12 +1650,12 @@ const STORY = {
 
     show_bev: {
       title: "Bev Laughs",
-      revised: 1,
+      revised: 2,
       text: [
         "You hand Bev the phone.",
         "She reads it. She scrolls. She reads the billing page. She reads one of StapleDaddy’s custom requests, from 2022: <em>can Big Stan wear a little santa hat</em>. Big Stan is her star stapler. She remembers that one. She did that shoot herself. She sewed the hat.",
         "And Bev Lund, sixty-eight, CEO and founder of Brightline Solutions, who has not laughed at one of her husband’s jokes in thirty-one years, starts to laugh.",
-        "It starts small. Then it’s big. Then she’s bent over, holding the windowsill, wheezing, tears running down her face, the light-up Rudolph on her sweater blinking like a hazard light. The whole party turns to look. Nobody has ever seen Bev laugh like this. Nobody knew she could.",
+        "It starts small. Then it’s big. Then she’s bent over, holding the windowsill, wheezing, tears running down her face, the light-up Rudolph on her sweater blinking like a hazard light. The whole party turns to look. In his chair, Ron snorts awake. Nobody has ever seen Bev laugh like this. Nobody knew she could.",
         "“Oh, Ronald,” she says finally, wiping her eyes. “Oh, you dumb, dumb man. You finally told a good one.”",
       ],
       choices: [
@@ -1665,12 +1666,12 @@ const STORY = {
 
     decision: {
       title: "The Mic",
-      revised: 1,
+      revised: 2,
       text: [
         "It’s 11:52 p.m. The party is a crime scene. There’s tinsel in the ceiling fan and somebody’s bra on the copier. Accounting is asleep under the conference table.",
-        "You’re standing by the mic. In your pocket are the keys to the server room and the admin password to everything. In three hours, the Daily Staple drops.",
+        "You’re standing by the mic. In your pocket are the keys to the server room. In three hours, the Daily Staple drops.",
         "You could tell them. All of them. Right now. That the reason they have jobs, the reason they have dental, the reason payroll is always covered, is a sixty-eight-year-old woman in a Rudolph sweater taking dirty pictures of a stapler. That Brightline Solutions is a front.",
-        "Or you could go upstairs, roll up your sleeves, and make sure that tonight, for the first time in three years, the server doesn’t die.",
+        "Or you could slip off to the server room, roll up your sleeves, and make sure that tonight, for the first time in three years, the server doesn’t die.",
         "Bev is watching you from across the room. She doesn’t say a word. She just waits, the way she’s been waiting for three years, for somebody to find out.",
       ],
       choices: [
@@ -1715,12 +1716,12 @@ const STORY = {
 
     root: {
       title: "Root Access",
-      revised: 1,
+      revised: 2,
       ending: true,
       text: [
-        "You go upstairs. You don’t tell anybody anything. Some secrets are worth more than the truth, and this one pays for everybody’s dental.",
-        "From 12:30 to 2:55 a.m., with the party thumping through the floor, you work. You move Bound & Filed onto real cloud hosting with a credit card Bev hands you without a word. You set up a load balancer. You spread the Daily Staple across servers on three continents. You type faster than you have typed since the nineties.",
-        "At 2:59, Bev comes up and stands behind you with two lemon bars.",
+        "You slip off to the server room and lock the door. You don’t tell anybody anything. Some secrets are worth more than the truth, and this one pays for everybody’s dental.",
+        "From 12:30 to 2:55 a.m., with the party thumping through the wall, you work. You move Bound & Filed onto real cloud hosting with a credit card Bev hands you without a word. You set up a load balancer. You spread the Daily Staple across servers on three continents. You type faster than you have typed since the nineties.",
+        "At 2:59, Bev lets herself in and stands behind you with two lemon bars.",
         "3:00.",
         "Forty-one thousand connections. Germany. Japan. Brazil. The Holiday Inn Express outside Omaha.",
         "The server holds.",
@@ -1734,13 +1735,13 @@ const STORY = {
 
     ronpays: {
       title: "Till Debt Do Us Part",
-      revised: 1,
+      revised: 2,
       ending: true,
       text: [
         "Thirty seconds later, Ron’s phone is up on the big projector in Conference Room A, eight feet tall, for the whole company to see. <em>Welcome back, StapleDaddy! Our #1 Fan!</em> The lifetime spend. The company card. <em>can Big Stan wear a little santa hat</em>.",
         "It takes the party about four seconds to put it together. It takes Ron about forty. You can watch the exact moment it lands: Ron’s face goes from confused, to horrified, to deeply, tenderly ashamed, and then, weirdly, to impressed. “Wait,” he says. “<em>You’re</em> Bound & Filed?”",
         "“Thirty-one years, Ronald,” Bev says. “And you finally showed some interest in my work.”",
-        "Gail, Bev’s divorce lawyer, has the video by 12:15 a.m. By Monday, the divorce is filed. By February, it’s final. A judge with excellent comic timing rules that since Ron stole three hundred and forty thousand dollars from Brightline and then spent all three hundred and forty thousand on Brightline’s most profitable product, he owes the company nothing, gets nothing, and has to sit there while the judge laughs for a full minute.",
+        "Gail, Bev’s divorce lawyer, has a video of it by 12:15 a.m. By Monday, the divorce is filed. By February, it’s final. A judge with excellent comic timing rules that since Ron stole three hundred and forty thousand dollars from Brightline and then spent all three hundred and forty thousand on Brightline’s most profitable product, he owes the company nothing, gets nothing, and has to sit there while the judge laughs for a full minute.",
         "Ron moves into a condo at The Willows, next door to Brent, who plays terrible music through the wall every night.",
         "And Ron, broke, needs a job. Bev gives him one. Hand model. Every Daily Staple now features Ron’s tan, wrinkled hand gently cradling Big Stan, the star stapler. The subscribers go wild. It is the first honest work Ron has ever done.",
         "You keep the servers up. Bev laughs every day now. Mostly at Ron.",
